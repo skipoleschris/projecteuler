@@ -46,7 +46,10 @@ class ProjectEulerSpec extends Specification { def is =
     "calculate the expected result of 5537376230"                                                 ! problem13^                                                     
                                                                                                   endp^
   "Finding the starting number, under one million, produces the longest chain given: n -> n/2 (even), n -> 3n + 1 (odd) should" ^
-    "calculate the longest chain number of 910107"                                                ! problem14^  
+    "calculate the longest chain number of 837799"                                                ! problem14^
+                                                                                                  endp^
+  "Finding the number of routes through a 20x20 grid without backtracking should"                 ^
+    "calculate the expected result of 137846528820"                                               ! problem15^
                                                                                                   end
 
   def problem1 = {
@@ -102,6 +105,10 @@ class ProjectEulerSpec extends Specification { def is =
   }
 
   def problem14 = {
-    Problem14() must_== 910107
+    Problem14() must_== 837799
+  }
+
+  def problem15 = {
+    Problem15(20) must_== 137846528820L
   }
 }

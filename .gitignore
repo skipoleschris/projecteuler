@@ -4,4 +4,6 @@ project/boot
 project/target
 .idea/workspace.xml
 projecteuler.sublime-workspace
+.ensime_port
+
 

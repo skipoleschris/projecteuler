@@ -1,9 +1,6 @@
 package templemore.projecteuler
 
-import annotation.tailrec
-import scala.math.sqrt
-
-object Problem11 extends BasicMathsConcepts {
+object Problem11 {
   def apply() = {
     val grid = List(
       "08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08",

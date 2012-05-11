@@ -22,4 +22,9 @@ trait BasicMathsConcepts {
   }
 
   def product(nums: IndexedSeq[Int]): Int = nums.foldLeft(1)((acc, n) => acc * n)
+
+  def pascalsTriangle: Stream[IndexedSeq[Long]] = 
+    Stream.cons(IndexedSeq(1L), Stream.iterate(IndexedSeq(1L, 1L)) { last =>
+      1L +: (last sliding 2 map (_.sum)).toIndexedSeq :+ 1L
+    })
 }
