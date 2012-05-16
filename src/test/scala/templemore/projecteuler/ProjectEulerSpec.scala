@@ -50,6 +50,9 @@ class ProjectEulerSpec extends Specification { def is =
                                                                                                   endp^
   "Finding the number of routes through a 20x20 grid without backtracking should"                 ^
     "calculate the expected result of 137846528820"                                               ! problem15^
+                                                                                                  endp^
+  "Finding the sum of the digits of the number 2^1000"                                            ^
+    "calculate the expected result of 1366"                                                       ! problem16^
                                                                                                   end
 
   def problem1 = {
@@ -110,5 +113,9 @@ class ProjectEulerSpec extends Specification { def is =
 
   def problem15 = {
     Problem15(20) must_== 137846528820L
+  }
+
+  def problem16 = {
+    Problem16(2, 1000) must_== 1366
   }
 }
