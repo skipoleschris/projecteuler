@@ -21,11 +21,14 @@ class Problems11To20Spec extends Specification { def is =
   "Finding the number of routes through a 20x20 grid without backtracking should"                 ^
     "calculate the expected result of 137846528820"                                               ! problem15^
                                                                                                   endp^
-  "Finding the sum of the digits of the number 2^1000"                                            ^
+  "Finding the sum of the digits of the number 2^1000 should"                                     ^
     "calculate the expected result of 1366"                                                       ! problem16^
                                                                                                   endp^
-  "Finding the number of letters required to write all the numbers 1 to 1000 in words"            ^
+  "Finding the number of letters required to write all the numbers 1 to 1000 in words should"     ^
     "calculate the expected result of 21124"                                                      ! problem17^
+                                                                                                  endp^
+  "Finding the maximum total from top to bottom of a triangle should"                             ^
+    "calculate the expected result of 1074"                                                       ! problem18^
                                                                                                   end
 
   def problem11 = {
@@ -54,5 +57,9 @@ class Problems11To20Spec extends Specification { def is =
 
   def problem17 = {
     Problem17() must_== 21124
+  }
+
+  def problem18 = {
+    Problem18() must_== 1074
   }
 }
