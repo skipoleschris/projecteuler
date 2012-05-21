@@ -29,6 +29,9 @@ class Problems11To20Spec extends Specification { def is =
                                                                                                   endp^
   "Finding the maximum total from top to bottom of a triangle should"                             ^
     "calculate the expected result of 1074"                                                       ! problem18^
+                                                                                                  endp^
+  "Finding how many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)" ^
+    "calculate the expected result of 171"                                                        ! problem19^
                                                                                                   end
 
   def problem11 = {
@@ -61,5 +64,9 @@ class Problems11To20Spec extends Specification { def is =
 
   def problem18 = {
     Problem18() must_== 1074
+  }
+
+  def problem19 = {
+    Problem19() must_== 171
   }
 }
